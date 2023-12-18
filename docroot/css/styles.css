@@ -1,1 +1,1 @@
-body{background-color:#b1d3da}
+html{font-size:16px}body{background-color:#b1d3da;font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;font-size:1rem;margin:0;padding:0}.page{background-color:#d3e6eb;display:grid;grid-template-rows:min-content 1fr min-content;min-height:100vh}footer,header{background-color:#458593}.section-outer{padding:1rem 2rem}.inner{margin:0 auto;max-width:900px}

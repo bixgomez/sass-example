@@ -8,13 +8,26 @@
     <?php require_once './browsersync-check.php'; ?>
 </head>
 <body>
-
-    <?php
-    // Your PHP code goes here
-    echo "Hello, World!";
-    // More PHP code can be added as needed
-    ?>
-
-    <script src="js/script.js"></script>
+  <div class="page">
+    <header class="section-outer">
+      <div class="inner">
+        This is the header area
+      </div>
+    </header>
+    <main class="section-outer">
+      <div class="inner">
+        <h1>This is the main area</h1>
+        <p>
+          <?php require_once './random-words.php'; ?>
+        </p>
+      </inner>
+    </main>
+    <footer class="section-outer">
+      <div class="inner">
+        This is the footer area
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

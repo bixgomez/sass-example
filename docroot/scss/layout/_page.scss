@@ -1,3 +1,38 @@
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: $c--primary--lighter;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  background-color: $c--primary--lightest;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+header {
+  background-color: $c--primary--dark;
+}
+
+main {
+}
+
+footer {
+  background-color: $c--primary--dark;
+}
+
+.section-outer {
+  padding: 1rem 2rem;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
 }
