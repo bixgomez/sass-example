@@ -1,0 +1,13 @@
+$c--white: #fff;
+$c--black: #000;
+
+$c--primary: #35cef0;
+$c--primary: desaturate($c--primary, 50%);
+
+$c--primary--light: lighten($c--primary, 10%);
+$c--primary--lighter: lighten($c--primary--light, 10%);
+$c--primary--lightest: lighten($c--primary--lighter, 10%);
+
+$c--primary--dark: darken($c--primary, 15%);
+$c--primary--darker: darken($c--primary--dark, 15%);
+$c--primary--darkest: darken($c--primary--darker, 15%);

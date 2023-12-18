@@ -6,6 +6,8 @@
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "node-sass-glob-importer": "^5.3.3",
     "postcss": "^8.4.32",
     "sass": "^1.69.5"
   }

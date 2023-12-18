@@ -1,5 +1,6 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('node-sass'));
+const globImporter = require('node-sass-glob-importer');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -16,7 +17,9 @@ const paths = {
 // Compile SCSS into CSS
 function style() {
     return gulp.src(paths.scss)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass({
+            importer: globImporter()
+          }).on('error', sass.logError))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(gulp.dest(paths.cssDest))
         .pipe(browserSync.stream());
