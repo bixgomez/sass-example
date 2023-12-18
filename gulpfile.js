@@ -41,7 +41,7 @@ function reload(done) {
 // Watch files
 function watchFiles() {
     gulp.watch(paths.scss, style);
-    gulp.watch([paths.js, paths.php], reload);
+    gulp.watch([paths.js, paths.php], gulp.series(reload));
 }
 
 // Define complex tasks
