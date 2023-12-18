@@ -1,6 +1,6 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('node-sass'));
-const globImporter = require('node-sass-glob-importer');
+const sass = require('gulp-sass')(require('sass'));
+const globImporter = require('sass-glob-importer');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -18,6 +18,7 @@ const paths = {
 function style() {
     return gulp.src(paths.scss)
         .pipe(sass({
+            includePaths: ['node_modules/breakpoint-sass/stylesheets'],
             importer: globImporter()
           }).on('error', sass.logError))
         .pipe(postcss([autoprefixer(), cssnano()]))

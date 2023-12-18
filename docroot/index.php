@@ -10,12 +10,12 @@
 <body>
   <div class="page">
     <header class="section-outer">
-      <div class="inner">
+      <div class="section-inner">
         This is the header area
       </div>
     </header>
     <main class="section-outer">
-      <div class="inner">
+      <div class="section-inner">
         <h1>This is the main area</h1>
         <p>
           <?php require_once './random-words.php'; ?>
@@ -23,7 +23,7 @@
       </inner>
     </main>
     <footer class="section-outer">
-      <div class="inner">
+      <div class="section-inner">
         This is the footer area
       </div>
     </footer>
