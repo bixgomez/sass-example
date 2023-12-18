@@ -11,14 +11,20 @@
   <div class="page">
     <header class="section-outer">
       <div class="section-inner">
-        This is the header area
+        <h1>This is the header area</h1>
       </div>
     </header>
     <main class="section-outer">
       <div class="section-inner">
-        <h1>This is the main area</h1>
+        <h2>This is the main area</h2>
         <p>
-          <?php require_once './random-words.php'; ?>
+          <?php require './random-words.php'; ?>
+        </p>
+        <p>
+          <?php require './random-words.php'; ?>
+        </p>
+        <p>
+          <?php require './random-words.php'; ?>
         </p>
       </inner>
     </main>

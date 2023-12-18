@@ -6,7 +6,7 @@ $words = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "ho
 $randomWords = [];
 
 // Generating 900 random words
-for ($i = 0; $i < 1000; $i++) {
+for ($i = 0; $i < 100; $i++) {
     $randomWords[] = $words[array_rand($words)];
 }
 
